@@ -26,15 +26,18 @@ humans = [
 # whose name starts with 'D':
 print("Starts with D:")
 a = []
-for h in humans:
-    if h.name[0] == "D":
-        a.append(h.name)
+for i in humans:
+    if i.name[0] == "D":
+        a.append(i.name)
 print(a)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
 print("Ends with e:")
 b = []
+for i in humans:
+    if i.name[-1] == "e":
+        b.append(i.name)
 print(b)
 
 # Write a list comprehension that creates a list of names of everyone
