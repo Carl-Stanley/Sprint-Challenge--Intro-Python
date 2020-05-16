@@ -1,5 +1,6 @@
 # The following list comprehension exercises will make use of the 
 # defined Human class. 
+import math
 class Human:
     def __init__(self, name, age):
         self.name = name
@@ -25,6 +26,9 @@ humans = [
 # whose name starts with 'D':
 print("Starts with D:")
 a = []
+for h in humans:
+    if h.name[0] == "D":
+        a.append(h.name)
 print(a)
 
 # Write a list comprehension that creates a list of names of everyone
