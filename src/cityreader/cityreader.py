@@ -23,6 +23,9 @@ class City:
         self.lat = lat
         self.lon = lon
 
+    def __repr__(self):
+        return f"{self.name}, {self.lat}, {self.lon}"    
+
 cities = []
 
 def cityreader(cities=[]):
